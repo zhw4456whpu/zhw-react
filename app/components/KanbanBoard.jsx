@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import List from './List.jsx';
+import Input from './Input.jsx';
 
 class KanbanBoard extends Component{
 	render(){
@@ -8,6 +9,7 @@ class KanbanBoard extends Component{
 				<List id="todo" title="To Do" cards={this.props.cards.filter((card)=>card.status==="todo")} />
 				<List id="in-progress" title="In Progress" cards={this.props.cards.filter((card)=>card.status==="in-progress")} />
 				<List id="done" title="Done" cards={this.props.cards.filter((card)=>card.status==="done")} />
+				<Input />
 			</div>
 		)
 	}
