@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 
 class Input extends Component{
 	clickHandler(){
-		alert(Math.random()*10);
+		var text = this.refs.inputText.value;
+		alert(text);
 		this.refs.inputText.focus();
 		
 	}
